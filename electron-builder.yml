@@ -1,4 +1,4 @@
-appId: com.github.cfis-ufro.electron-development-template
+appId: com.github.cfis-ufro.coxiris-positioning-system
 icon: resources/icon.png
 directories:
   buildResources: build
