@@ -1,3 +1,41 @@
 {
-    "title": "Electron Development Template"
-}
+    "positioning": {
+      "title": "COXIRIS Positioning System",
+      "system_status": "System Status",
+      "position_x": "X Position",
+      "position_y": "Y Position",
+      "position_z": "Z Position",
+      "speed": "Speed",
+      "status": "Status",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "connection": "Connection",
+      "port": "Port",
+      "select_port": "Select port",
+      "connect": "Connect",
+      "disconnect": "Disconnect",
+      "basic_control": "Basic Control",
+      "set_home": "Set Home",
+      "go_home": "Go Home",
+      "set_speed": "Set Speed",
+      "movement": "Movement",
+      "absolute_movement": "Absolute Movement",
+      "relative_movement": "Relative Movement",
+      "go_to_position": "Go to position",
+      "move": "Move",
+      "terminal": "Terminal",
+      "no_activity": "No activity recorded"
+    },
+    "error": {
+      "no_port_selected": "Error: No port selected"
+    },
+    "log": {
+      "connected_to_port": "Connected to port {port}",
+      "disconnected": "Disconnected",
+      "position_set_as_home": "Current position set as Home (0,0,0)",
+      "moving_to_home": "Moving to Home position (0,0,0)",
+      "speed_set": "Speed set to {speed} mm/min",
+      "absolute_move": "Absolute movement to position ({x}, {y}, {z})",
+      "delta_move": "Relative movement ({dx}, {dy}, {dz}) - New position: ({x}, {y}, {z})"
+    }
+  }

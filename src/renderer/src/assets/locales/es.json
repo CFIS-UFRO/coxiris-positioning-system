@@ -1,3 +1,41 @@
 {
-    "title": "Plantilla de Desarrollo de Electron"
-}
+    "positioning": {
+      "title": "Sistema de Posicionamiento de COXIRIS",
+      "system_status": "Estado del Sistema",
+      "position_x": "Posición X",
+      "position_y": "Posición Y",
+      "position_z": "Posición Z",
+      "speed": "Velocidad",
+      "status": "Estado",
+      "connected": "Conectado",
+      "disconnected": "Desconectado",
+      "connection": "Conexión",
+      "port": "Puerto",
+      "select_port": "Seleccionar puerto",
+      "connect": "Conectar",
+      "disconnect": "Desconectar",
+      "basic_control": "Control Básico",
+      "set_home": "Establecer Home",
+      "go_home": "Ir a Home",
+      "set_speed": "Establecer Velocidad",
+      "movement": "Movimiento",
+      "absolute_movement": "Movimiento Absoluto",
+      "relative_movement": "Movimiento Relativo",
+      "go_to_position": "Ir a posición",
+      "move": "Mover",
+      "terminal": "Terminal",
+      "no_activity": "Sin actividad registrada"
+    },
+    "error": {
+      "no_port_selected": "Error: No se ha seleccionado un puerto"
+    },
+    "log": {
+      "connected_to_port": "Conectado al puerto {port}",
+      "disconnected": "Desconectado",
+      "position_set_as_home": "Posición actual establecida como Home (0,0,0)",
+      "moving_to_home": "Moviendo a posición Home (0,0,0)",
+      "speed_set": "Velocidad configurada a {speed} mm/min",
+      "absolute_move": "Movimiento absoluto a posición ({x}, {y}, {z})",
+      "delta_move": "Movimiento relativo ({dx}, {dy}, {dz}) - Nueva posición: ({x}, {y}, {z})"
+    }
+  }
