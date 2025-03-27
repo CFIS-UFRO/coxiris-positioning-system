@@ -9,6 +9,7 @@ import { initializeLanguage } from './utils/lang.js'
 import { initializeTheme } from './utils/theme.js'
 import packageJson from '../../package.json'
 import ApiServer from './api-server.js';
+import SerialGCodePrinter from './serial.js'
 
 // Configure logging
 log.errorHandler.startCatching();
@@ -20,6 +21,10 @@ log.info('Starting the app...');
 log.info('Log file:', LOG_FILE_DIR);
 log.info('Cache folder:', CACHE_FOLDER_DIR);
 log.info('User data file:', USER_DATA_FILE_DIR);
+
+// Initialize SerialGCodePrinter
+const printer = new SerialGCodePrinter();
+printer.initializeIPC();
 
 // Expose repo URL to renderer
 ipcMain.on('get-repo', (event) => {
