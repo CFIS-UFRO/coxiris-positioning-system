@@ -1,0 +1,65 @@
+{
+    "language": {
+        "en": "English",
+        "es": "Spanish",
+        "system": "System"
+    },
+    "themes": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+    },
+    "menu": {
+        "file": {
+            "title": "File",
+            "open_logs": "Open Logs",
+            "open_preferences": "Open Preferences",
+            "open_cache": "Open Cache",
+            "check_for_updates": "Check for Updates",
+            "quit": "Quit"
+        },
+        "edit": {
+            "title": "Edit",
+            "undo": "Undo",
+            "redo": "Redo",
+            "cut": "Cut",
+            "copy": "Copy",
+            "paste": "Paste",
+            "delete": "Delete",
+            "select_all": "Select All"
+        },
+        "view": {
+            "title": "View",
+            "reload": "Reload",
+            "force_reload": "Force Reload",
+            "toggle_dev_tools": "Toggle Developer Tools",
+            "reset_zoom": "Reset Zoom",
+            "zoom_in": "Zoom In",
+            "zoom_out": "Zoom Out",
+            "toggle_fullscreen": "Toggle Fullscreen"
+        },
+        "settings": {
+            "title": "Settings",
+            "language": "Language",
+            "theme": "Theme"
+        },
+        "about": {
+            "title": "About",
+            "repository": "Repository",
+            "releases": "Releases",
+            "author": "Author",
+            "authors": "Authors",
+            "about_message": "Electron Development Template"
+        }
+    },
+    "updates": {
+        "check_for_updates": "Check for Updates",
+        "update_check_failed": "Update check failed",
+        "close": "Close",
+        "update_available": "Update Available",
+        "up_to_date": "Your Application is Up to Date",
+        "current_version": "Current Version",
+        "latest_version": "Latest Version",
+        "go_to_download": "Go to Download Page"
+    }
+}

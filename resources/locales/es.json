@@ -1,0 +1,65 @@
+{
+    "language": {
+        "en": "Inglés",
+        "es": "Español",
+        "system": "Sistema"
+    },
+    "themes": {
+        "light": "Claro",
+        "dark": "Oscuro",
+        "system": "Sistema"
+    },
+    "menu": {
+        "file": {
+            "title": "Archivo",
+            "open_logs": "Abrir Registros",
+            "open_preferences": "Abrir Preferencias",
+            "open_cache": "Abrir Caché",
+            "check_for_updates": "Buscar Actualizaciones",
+            "quit": "Salir"
+        },
+        "edit": {
+            "title": "Editar",
+            "undo": "Deshacer",
+            "redo": "Rehacer",
+            "cut": "Cortar",
+            "copy": "Copiar",
+            "paste": "Pegar",
+            "delete": "Eliminar",
+            "select_all": "Seleccionar Todo"
+        },
+        "view": {
+            "title": "Ver",
+            "reload": "Recargar",
+            "force_reload": "Forzar Recarga",
+            "toggle_dev_tools": "Alternar Herramientas de Desarrollo",
+            "reset_zoom": "Restablecer Zoom",
+            "zoom_in": "Acercar",
+            "zoom_out": "Alejar",
+            "toggle_fullscreen": "Alternar Pantalla Completa"
+        },
+        "settings": {
+            "title": "Configuración",
+            "language": "Idioma",
+            "theme": "Tema"
+        },
+        "about": {
+            "title": "Acerca de",
+            "repository": "Repositorio",
+            "releases": "Versiones",
+            "author": "Autor",
+            "authors": "Autores",
+            "about_message": "Plantilla de Desarrollo de Electron"
+        }
+    },
+    "updates": {
+        "check_for_updates": "Buscar Actualizaciones",
+        "update_check_failed": "Verificación de actualizaciones fallida",
+        "close": "Cerrar",
+        "update_available": "Actualización Disponible",
+        "up_to_date": "Su Aplicación Está Actualizada",
+        "current_version": "Versión Actual",
+        "latest_version": "Última Versión",
+        "go_to_download": "Ir a la Página de Descarga"
+    }
+}

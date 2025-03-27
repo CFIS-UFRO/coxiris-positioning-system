@@ -1,0 +1,66 @@
+name: Build and Release Electron App
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions: 
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, macos-13, ubuntu-latest, ubuntu-24.04-arm]
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build for Windows
+        if: matrix.os == 'windows-latest'
+        run: npm run build:win
+        
+      - name: Build for macOS
+        if: startsWith(matrix.os, 'macos')
+        run: npm run build:mac
+        
+      - name: Build for Linux
+        if: startsWith(matrix.os, 'ubuntu')
+        run: npm run build:linux
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.os }}-build
+          path: dist/*.zip
+          if-no-files-found: error
+            
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+        
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: artifacts/**/*
+          draft: false
+          prerelease: false
+          generate_release_notes: false
